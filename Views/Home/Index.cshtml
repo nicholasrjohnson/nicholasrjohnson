@@ -1,0 +1,571 @@
+@using webapp.Models
+@model EmailMeModel
+
+@{
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="Nicholas R Johnson" content="Projects">
+    <meta property="og:title" content="Nicholas R Johnson" />
+    <meta property="og:site_name" content="Nicholas R Johnson." />
+    <meta property="og:description" content="Nicholas R Johnson - A software engineer and investor." />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://www.nicholasrjohnson.com" />
+    <meta property="og:image" content="assets/img/bg-01.jpg" />
+    <meta property="og:type" content="website" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.ico" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.ico" />
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/favicon/chickenhat.svg" color="#76a3fb">
+    <meta name="msapplication-TileColor" content="#76a3fb">
+    <meta name="google-site-verification" content="IKfOslUP52D3Qay_gbrA5rtWLUC2t3waF6RAQ6R737s" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="assets/css/morphext.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Nicholas R Johnson - Engineer and Security Expert</title>
+</head>
+<body data-spy="scroll" data-target=".navbar" class="has-loading-screen">
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+        async defer>
+</script>
+    <div class="page-wrapper" id="page-top">
+	<div class="loading-screen"></div>
+        <header id="hero">
+		
+            <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+                <div class="container">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ml-auto">
+                            <a class="nav-item nav-link active" href="#page-top">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-item nav-link" href="#what-we-do">What I Do</a>
+                            <a class="nav-item nav-link" href="#our-works">My Projects</a>
+                            <a class="nav-item nav-link" href="#the-team">Consultant</a>
+                            <a class="nav-item nav-link" href="#about-us">About Me</a>
+                            <a class="nav-item nav-link" href="#blog">Blog</a>
+                            <a class="nav-item nav-link" href="#contact">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="container">
+                <div class="row">
+                    <div class="hero__outer-wrapper">
+                        <div class="hero__inner-wrapper align-middle">
+                            <h1>
+                                <span class="hero__title">I Am a</span>
+                                <a class="hero__title text-carousel" href="#our-works" >Software, Security, Architecture</a>
+                                <br>
+                                <span class="hero__title">Expert</span>
+                            </h1>
+                            <a href="#what-we-do" class="hero__link align-items-center">
+                                <figure class="mb-0 align-middle"></figure>
+                                Check It
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero__background skew-down-left">
+                <div class="background-wrapper" data-parallax="scroll" data-parallax-speed="3" data-background-color="#000000" >
+                    <div class="background opacity-90">
+                        <div class="hero__slider parallax-element">
+                            <div class="img-into-bg">
+                                <img src="assets/img/mtwashington.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div id="content">
+            <section class="pb-0 block" id="what-we-do">
+                <div class="container"> 
+                    <div class="block__title">
+                        <h2 class="reveal">What I Do</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="box">
+                                <div class="box__wrapper">
+                                    <div class="box__header">
+                                        <div class="box__image">
+                                            <img src="assets/img/icon-desktop.png" class="" alt="">
+                                        </div>
+                                        <h4 class="reveal">Software</h4>
+                                    </div>
+                                    <div class="box__content">
+                                        <p>
+										I develop software during the day for a company. I also implement solutions
+										in my spare time to solve various problems that myself and others have.
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box">
+                                <div class="box__wrapper">
+                                    <div class="box__header">
+                                        <div class="box__image">
+                                            <img src="assets/img/icon-network.png" class="" alt="">
+                                        </div>
+                                        <h4 class="reveal">Security</h4>
+                                    </div>
+                                    <div class="box__content">
+                                        <p>
+										I study networking, network and software security, and ethical hacking
+										outside of work in order to keep up with the times and allow myself
+										to be able to assess other's needs.
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="box">
+                                <div class="box__wrapper">
+                                    <div class="box__header">
+                                        <div class="box__image">
+                                            <img src="assets/img/icon-compass.png" class="" alt="">
+                                        </div>
+                                        <h4 class="reveal">Architecture</h4>
+                                    </div>
+                                    <div class="box__content">
+                                        <p>
+										I am currently approaching a new level of development where I am
+										putting together larger projects by looking at the bigger picture and
+										breaking it into parts to be a solution to a much larger problem.
+										</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pb-0 block" id="our-works">
+                <div class="container">
+                    <div class="block__title">
+                        <h2 class="reveal">Projects</h2>
+                    </div>
+                </div>
+                <div class="gallery skew-down-left skew-up-right">
+                    <div class="container-fluid px-0">
+                        <div class="row no-gutters">
+                            <div class="col-md-4">
+                                <a href="https://github.com/nicholasrjohnson/raspberrytalk" target="_blank" class="gallery__image open_popup_link">
+                                    <div class="gallery__caption">
+                                        <h5 class="reveal">Raspberry Talk</h5>
+										<p>
+											I am implementing two Raspberry Pis with Ubuntu Server
+											to talk to one another using Google Speech to Text
+											and a Character.AI API. Written with Python.
+										</p>
+                                    </div>
+									   <div class="img-into-bg">
+                                        <img src="assets/img/colorblock2.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-md-4">
+                                <a href="https://github.com/nicholasrjohnson/rideshare" target="_blank" class="gallery__image open_popup_link">
+                                    <div class="gallery__caption">
+                                        <h5 class="reveal">Prison Rideshare</h5>
+										<p>
+											This project was developed when I was self-employed
+											and a friend came up with the idea to help families
+											of prison inmates have a rideshare applicaiont to
+											visit their loved ones. An ASPNetCore application.
+										</p>
+                                    </div>
+                                    <div class="img-into-bg">
+                                        <img src="assets/img/colorblock1.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="https://github.com/nicholasrjohnson/caffeinated_comments" target="_blank"class="gallery__image open_popup_link">
+                                    <div class="gallery__caption">
+                                        <h5 class="reveal">Caffeinated Comments</h5>
+										<p>
+											A self hosted commenting system for any blog or social 
+											media site that simply uses a javascript tag in
+											the markup. Written in Django and Python.
+										</p>
+                                    </div>
+                                    <div class="img-into-bg">
+                                        <img src="assets/img/colorblock2.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="https://github.com/nicholasrjohnson/babysafe" target="_blank" class="gallery__image open_popup_link">
+                                    <div class="gallery__caption">
+                                        <h5 class="reveal">Baby Safe</h5>
+                                        <p>
+											A new way of envisioning a baby monitor using HTTP
+											Request/Responses to ensure a reliable connection that
+											sends an image to an Android or Apple Smartphone when
+											their is a disturbance. Written in Rust and Java.
+										</p>
+                                    </div>
+                                    <div class="img-into-bg">
+                                        <img src="assets/img/colorblock1.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="https://github.com/nicholasrjohnson/vesuvius" target="_blank" class="gallery__image open_popup_link">
+                                    <div class="gallery__caption">
+                                        <h5 class="reveal">Vesuvius</h5>
+                                        <p>
+											Drop the stick figures in a volcano and get the high
+											score. Uses javascript box2D and Phaser 3 to allow for
+											realistic physics in a ASPNetCore web application.
+										</p>
+                                    </div>
+                                    <div class="img-into-bg">
+                                        <img src="assets/img/colorblock2.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="https://github.com/nicholasrjohnson/phaser3" target="_blank" class="gallery__image open_popup_link">
+                                    <div class="gallery__caption">
+                                        <h5 class="reveal">Orkastra</h5>
+                                        <p>
+											Put fish in an aquarium that make music depending on their
+											size, color, pattern. Watch them swim and change their pitch,
+											volume, and sound waves. Written with Phaser 3 and HTML5 Web Audio.
+										</p>
+                                    </div>
+                                    <div class="img-into-bg">
+                                        <img src="assets/img/colorblock1.jpg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="my-2 text-center">
+                    <a href="https://github.com/nicholasrjohnson" class="btn btn-primary">Load More</a>
+                </div>
+            </section>
+            <section class="pt-4 block" id="about-us">
+                <div class="container">
+                    <div class="block__wrapper">
+                        <div class="block__title">
+                            <h2 class="reveal">About Me</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-7">
+                                <p>
+                                    As a highly dedicated and experienced fullstack software engineer, security professional, and 
+                                    consultant with 12 years of increasing responsibility in warehouse voice 
+                                    solutions, defense readiness applications, customer sales software support, 
+                                    the moving industry, agricultural business and development roles with 
+                                    a wide variety of development tools including C#.NET, Java, Python, 
+                                    HTML, CSS, javascript, MySQL, and SQLServer. I am seeking and aspire to 
+                                    assist with customer satisfaction by creating high quality products using 
+                                    the SDLC. And, I would like to assess systems for viability and  security 
+                                    awareness. Currently, my interests have reached into wanting to step out in  
+                                    leadership in order to mentor less experienced developers and be mentored 
+                                    to become a better courtier in the game of life.
+                                </p>
+                                <a href="#contact" class="btn btn-default mb-4">Contact Me</a>
+                            </div>
+                            <div class="col-md-5">
+                                <img class="width-100 shadow rounded-corners" src="assets/img/nickandcasey.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="pb-4 block skew-down-left skew-up-right" id="the-team">
+                <div class="container">
+                    <div class="block__wrapper">
+                        <div class="block__title">
+							<h2 class="reveal">Profile</h2>
+                        </div>
+			<div>
+							<p>
+								I moved to Pittsburgh in 2018 where I met my beautiful wife, Casey. She, myself, and my stepson, Jayce, 
+								enjoy doing a number of things around the city. Pittsburgh is like a small town and a metropolis at the same 
+								time, not to mention it is a serious tech hub. I was born in Grand Rapids, MI, and I moved around a few 
+								times. I fell in love with computers in the 80s when my dad had a computer lab in his middle school. He 
+								brought me there and let me experiment, and I was hooked. This is truly when I started my career. I later 
+								went to Rochester Institute of Technology where I was a part of <a href="https://csh.rit.edu/" target="_blank"><strong>Computer Science House</strong></a> and the <a target="_blank" href="https://rit.edu/honors"><strong>Honors and Leadship Program</strong></a>.
+							</p>
+
+			</div>
+
+		</div>
+		</div>
+<div class="container-fluid" style="margin-top: 200px; margin-bottom: 200px;">
+    <div class="container text-center" text-align:center;">
+        <div class="row">
+                        <div class="row">
+                            <div class="col">
+                                <div class="person">
+                                    <h4 class="reveal">Nicholas R Johnson</h4>
+                                    <h5>Consulant</h5>
+                                    <div class="person__image">
+                                        <div class="img-into-bg">
+                                            <img src="assets/img/nicholas.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="background-wrapper" data-background-color="#eeeeee">
+                    <div class="background background--image opacity-5 background--repeat-repeat">
+                        <img src="assets/img/pattern-topo.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="pt-4 block" id="blog">
+                <div class="container">
+                    <div class="block__wrapper">
+                        <div class="block__title">
+                            <h2 class="reveal">Blog</h2>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                <a href="https://blog.nicholasrjohnson.com/better-programming/" target="_blank" class="box box--image">
+                                    <div class="box__wrapper no-shadow">
+                                        <div class="box__header">
+                                            <div class="box__image img-into-bg">
+                                                <img src="assets/img/colorblock3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="box__content px-0">
+                                            <h5>02.25.2023</h5>
+                                            <h4 class="reveal">Better Programming</h4>
+                                            <p class="mb-4">
+                                                I have been reading a book about programming correctness and robustness
+												and attempting to assure the coder of that. The main concepts that it
+												discussed were preconditions, post conditions, invariants, assertions,
+												and penalties. I am concerned that I am not utilizing these things enough at work...
+                                            </p>
+                                            <div class="additional-info">
+                                                <figure>
+													2 Minute Read
+											    </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                <a href="https://blog.nicholasrjohnson.com/a-new-view-on-unit-testing/" target="_blank" class="box box--image">
+                                    <div class="box__wrapper no-shadow">
+                                        <div class="box__header">
+                                            <div class="box__image img-into-bg">
+                                                <img src="assets/img/colorblock3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="box__content px-0">
+                                            <h5>04.27.2023</h5>
+                                            <h4 class="reveal">Another Look at Unit Testing</h4>
+                                            <p class="mb-4">
+                                                I have been reading about software architecting for the first time with the 
+												Software Architect's Handbook by Joseph Ingeno. It has been very eye opening.
+												I have been learning that you cannot blueprint a system of software with unit testing.
+												Unit testing is simply a tool, along with integration testing, that proves a blueprint
+												I want to put all of these tools into practice...
+                                            </p>
+                                            <div class="additional-info">
+                                                <figure>
+													1 Minute Read
+											    </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+
+                            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12">
+                                <a href="https://blog.nicholasrjohnson.com/frustration-to-creativity" target="_blank" class="box box--image">
+                                    <div class="box__wrapper no-shadow">
+                                        <div class="box__header">
+                                            <div class="box__image img-into-bg">
+                                                <img src="assets/img/colorblock3.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="box__content px-0">
+                                            <h5>12.12.2022</h5>
+                                            <h4 class="reveal">Frustration to Creativity</h4>
+                                            <p class="mb-4">
+                                                I have heard that "Necessity is the Mother of Invention," 
+												and I have been reading about different stages of consciousness.
+												There are a few stages that are tipping points to higher stages
+												or regressing back to lower. Before anger is Desire, and this can
+												be a springboard to the next. It is a tipping point. Desire to
+												frustration can destroy a man. It can break him down into thinking all hope is lost...
+                                            </p>
+                                            <div class="additional-info">
+                                                <figure>
+													2 Minute Read
+											    </figure>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer id="footer" class="skew-up-right">
+            <div class="container">
+                <div class="block__wrapper">
+                    <div class="block__title" id="contact">
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
+                            <div class="row">
+                                <div class="col-sm-6 col-lg-12">
+                                    <h4>Locale</h4>
+                                    <address>
+                                        Pittsburgh, PA
+                                        <br>
+                                        United States
+                                    </address>
+                                </div>
+                                <div class="col-sm-6 col-lg-12">
+                                    <div class="py-4">
+                                        <figure>
+                                            <i class="fa fa-list width-20px"></i>
+                                            <a href="assets/resources/NicholasRJohnsonResume.docx">Resume</a>
+                                        </figure>
+                                        <figure>
+                                            <i class="fa fa-facebook width-20px"></i>
+                                            <a target="_blank" href="https://www.facebook.com/nicholasrobertjohnson">Facebook</a>
+                                        </figure>
+                                        <figure>
+                                            <i class="fa fa-twitter width-20px"></i>
+                                            <a target="_blank" href="https://www.twitter.com/nickrjohnson">Twitter</a>
+                                        </figure>
+                                        <figure>
+                                            <i class="fa fa-linkedin width-20px"></i>
+                                            <a target="_blank" href="https://www.linkedin.com/in/nicholasrobertjohnson">LinkedIn</a>
+                                        </figure>
+                                    </div>
+                                    <!--end py-4-->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-6 col-md-12 col-sm-12">
+                            <h4>Contact</h4>
+
+                            @using (Html.BeginForm("EmailMe", "Home", FormMethod.Post, new { id = "form", @class = "form clearfix" }))
+                            {
+                                @Html.HiddenFor(m => m.ValidSubmit, new { id = "validField" })
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="form-contact-name">Your Name</label>
+                                            @Html.TextBoxFor(m => m.Name, new { @class = "form-control", id = "name", placeholder = "Your Name" })
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-sm-6">
+                                        <div class="form-group">
+                                            <label for="form-contact-email">Your Email</label>
+                                            @Html.TextBoxFor(m => m.Email, new { @class = "form-control", id = "emailfield", placeholder = "Your Email" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group">
+                                            <label for="form-contact-message">Your Message</label>
+                                            @Html.TextAreaFor(m => m.Message, new { @class = "form-control", rows = "8", id = "message", placeholder = "Your Message" })
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group clearfix">
+                                    <div class="m-1" id="captcha"></div>
+                                    <button type="submit" class="btn pull-right btn-default" id="mailbutton" onclick="validSubmit();">Send a Message</button>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr-white opacity-10">
+            <div class="container">
+                <span>&#x00A9; Copyright @DateTime.Now.Year, All Rights Reserved</span>
+            </div>
+            <div class="background-wrapper" data-background-color="#000000">
+                <div class="background background--particles"></div>
+            </div>
+        </footer>
+    </div>
+	<script src="assets/js/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/popper.min.js"></script>
+	<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/isInViewport.jquery.js"></script>
+	<script src="assets/js/jquery.particleground.min.js"></script>
+	<script src="assets/js/jquery.magnific-popup.min.js"></script>
+	<script src="assets/js/owl.carousel.min.js"></script>
+	<script data-pace-options='{ "eventLag": false }'src="assets/js/pace.min.js"></script>
+	<script src="assets/js/jquery.validate.min.js"></script>
+	<script src="assets/js/jquery-validate.bootstrap-tooltip.min.js"></script>
+	<script src="assets/js/morphext.min.js"></script>
+	<script src="assets/js/custom.js"></script>
+    </body>
+</html>
+
+    <script>
+  var onloadCallback = function () {
+    grecaptcha.render('captcha', {
+      'sitekey': '6Lf7iSYiAAAAAHqdtprpV-ZWMrUZLKB6d00teb4e'
+    });
+  };
+
+  function validSubmit() {
+    var response = grecaptcha.getResponse();
+    var valid = false;
+    $("#validField").val(false);
+    if (response.length && 
+        $("#message").val() != '' &&
+        $("#message").val() != null &&
+        $("#message").val().length < 1000 &&
+        $("#name").val().length < 100 &&
+        $("#name").val() != '' &&
+        $("#name").val() != null &&
+        $("#emailfield").val() != '' &&
+        $("#emailfield").val() != null &&
+        $("#emailfield").val().length < 50 &&
+        RegExp(/[A-Za-z0-9._%+-]+@@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}/).test($('#emailfield').val())) 
+        {
+          valid = true;
+          grecaptcha.reset();
+        }
+        if (valid) {
+          $("#validField").val(true);
+        }
+    } 
+    </script>
