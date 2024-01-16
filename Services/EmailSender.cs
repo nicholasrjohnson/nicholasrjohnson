@@ -27,9 +27,9 @@ namespace webapp.Services {
             string message)
         {
 
-		var options = new RestClientOptions("https://api.mailgun.net/v3/")
+		var options = new RestClientOptions("https://api.mailgun.net/v3")
 		{
-			Authenticator = new HttpBasicAuthenticator("api", "api:key-" + Options.ApiKey)
+			Authenticator = new HttpBasicAuthenticator("api", Options.ApiKey)
 		};
 
 		var client = new RestClient(options); 
@@ -38,6 +38,10 @@ namespace webapp.Services {
 		request.Resource = "{domain}/messages";
 		request.AddParameter("from", Options.SenderEmail);
 		request.AddParameter("to", Options.ToEmail);
+		request.AddParameter("subject", subject);
+		request.AddParameter("html", message);
+		request.AddParameter("h:Reply-To", Options.SenderEmail);
+		request.Method = Method.Post;
 		var result = await client.ExecuteAsync(request);
 	} 
   }

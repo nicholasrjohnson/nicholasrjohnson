@@ -32,6 +32,7 @@ namespace webapp.Controllers
             {
                 await _sender.SendEmailAsync("", "Message From Nicholas R Johnson website", $"This is the message: <br>{model.Message} <br><br> From {model.Name} with email {model.Email}");
             }
+
             return this.RedirectToAction("Index", "Home");
         }
     }
