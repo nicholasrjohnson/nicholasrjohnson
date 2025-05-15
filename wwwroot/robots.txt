@@ -1,6 +1,0 @@
-User-agent: *
-Sitemap: https://nicholasrjohnson.com/sitemap.xml
-Disallow: /p/
-Disallow: /email/
-Disallow: /r/
-Disallow: /assets/
